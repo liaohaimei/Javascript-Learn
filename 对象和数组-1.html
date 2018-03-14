@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对象和数组</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		//对象包含哪些元素
+		//1.属性（字段）
+		//2.方法（函数）
+
+		/*var obj = new Object();  //创建一个对象
+		obj.name="aaa";
+		obj.age="20";
+		alert(obj);//object Object
+		alert(obj.name);//aaa*/
+
+		//new关键字是可以省略的
+		/*var obj = Object();*/
+
+		/*var box={}; //字面量方式创建对象
+		alert(box); //object Object
+		alert(typeof box); //object*/
+
+		// var box={ //字面量方式封装数据
+		// 	'name':'aaa'; //属性可以用引号括起来
+		// 	age:20
+		// };
+		// alert(box.name);
+
+		/*var box={
+			'name':'aaa';
+			'age':20
+		};
+		alert(box.name);
+		alert(box['name']); //用数组的方法输出，注意引号*/
+
+/*
+		function box(obj){
+			if(obj.name!=undefined) alert(obj.name);
+			if(obj.love!=undefined) alert(obj.love);
+			if(obj.age!=undefined) alert(obj.age);
+		}
+
+		var obj={
+			name:'aaa',
+			age:20,
+			height:177,
+			address:'广东深圳'
+		}
+
+		box(obj);*/
+
+		function box(obj){
+			if(obj.name!=undefined) alert(obj.name);
+			if(obj.love!=undefined) alert(obj.love);
+			if(obj.age!=undefined) alert(obj.age);
+		}
+
+
+		box({  //匿名对像
+			name:'aaa',
+			age:20,
+			height:177,
+			address:'广东深圳'
+		});
+	</script>
+	
+</body>
+</html>
