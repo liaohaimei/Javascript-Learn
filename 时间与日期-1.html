@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>时间与日期</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+/*var box = new Date();  //创建一个日期对象，构造方法里面可以传参数，指定时间，如果没有传，就是默认当前时间
+console.log(box);//Fri Mar 16 2018 11:07:29 GMT+0800 (中国标准时间)   不同浏览器显示不同
+*/
+/*
+console.log(Date.parse('3/16/2018')); //1521129600000   返回的是毫秒数。
+
+var box = new Date(Date.parse('3/16/2018')); //把毫秒数转换成看的懂的时间
+console.log(box); //Fri Mar 16 2018 00:00:00 GMT+0800 (中国标准时间)
+*/
+/*
+var box = new Date(1521129600000); //直接放日期的毫秒数也是可以的
+console.log(box); //Fri Mar 16 2018 00:00:00 GMT+0800 (中国标准时间)
+*/
+/*
+var box = new Date('3/16/2018'); //默认自动后台调用Date.parse()
+console.log(box); //Fri Mar 16 2018 00:00:00 GMT+0800 (中国标准时间)
+*/
+/*
+console.log(Date.parse());	//没有传入日期格式参数，返回NaN 
+*/
+
+var box = new Date("sdf2342"); //乱写的日期格式，会返回 Invalid Date (无效的日期)    ie8及以下版本返回 NaN
+console.log(box); //Invalid Date
+</script>
+	
+</body>
+</html>

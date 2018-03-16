@@ -102,13 +102,27 @@ console.log(box); //当前数组没有任何变化*/
 /*var box = ['aaa',20,'深圳','计算机科学','hello'];
 var box2 = box.splice(1,3); //从下标为1的位置开始取,取3个数据
 console.log(box2); //20,深圳
-console.log(box); //剩下的元素*/
-
-var box = ['aaa',20,'深圳','计算机科学','hello'];
-var box2 = box.splice(1,1,"bbbb"); //从下标为1的位置开始取,取3个数据
-console.log(box2); //20,深圳
 console.log(box); //剩下的元素
+*/
+/*
+var box = ['aaa',20,'深圳','计算机科学','hello'];
+var box2 = box.splice(1,3,"bbbb"); //从下标为1的位置开始取,取3个数据，然后将取出的部分，替换成“bbb”
+console.log(box2); // [20, "深圳", "计算机科学"]
+console.log(box); //["aaa", "bbbb", "hello"]
+*/
+/*
+//删除功能
+var box = ['aaa',20,'深圳','计算机科学','hello'];
+var box2 = box.splice(0,2);  //这里表示从第0个位置取2个。而不是从第0个位置取到第2个位置
+console.log(box2); //["aaa", 20]
+console.log(box); //["深圳", "计算机科学", "hello"]
+*/
 
+//插入功能
+var box = ['aaa',20,'深圳','计算机科学','hello'];
+var box2 = box.splice(1,0,'bbb','ccc','ddd'); //从第一个插入点插入元素，0表示不删除
+console.log(box2); //[]
+console.log(box); //["aaa", "bbb", "ccc", "ddd", 20, "深圳", "计算机科学", "hello"]
 </script>
 	
 </body>
